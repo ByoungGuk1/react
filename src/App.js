@@ -1,15 +1,11 @@
 import React from 'react';
 import './App.css';
-import Jsx01 from './Jsx01';
-import Jsx02 from './Jsx02';
-import Jsx03 from './Jsx03';
+import Colors from './docs/state/Colors';
 
 function App() {
   return (
     <React.Fragment>
-      <Jsx01 />
-      <Jsx02 />
-      <Jsx03 />
+      <Colors />
     </React.Fragment>
   );
 }
