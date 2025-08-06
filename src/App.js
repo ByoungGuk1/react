@@ -1,12 +1,14 @@
-import React from 'react';
-import './App.css';
-import Colors from './docs/state/Colors';
+// import React from 'react';
+import "./App.css";
+import RefName from "./docs/ref/basic/RefName";
 
 function App() {
   return (
-    <React.Fragment>
-      <Colors />
-    </React.Fragment>
+    <>
+      {/* <React.Fragment> */}
+      <RefName />
+      {/* </React.Fragment> */}
+    </>
   );
 }
 
