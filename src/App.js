@@ -1,12 +1,12 @@
 // import React from 'react';
 import "./App.css";
-import RefName from "./docs/ref/basic/RefName";
+import ProductContainer from "./docs/map/expert/Product";
 
 function App() {
   return (
     <>
       {/* <React.Fragment> */}
-      <RefName />
+      <ProductContainer />
       {/* </React.Fragment> */}
     </>
   );
