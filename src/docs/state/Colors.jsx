@@ -6,20 +6,19 @@ import React, { useState } from 'react';
 // 핑크색 입력시 글자색 핑크색
 
 const Colors = () => {
-  const [result, setColor] = useState("123");
-  let color = "";
-
+  const [result, setResult] = useState("");
+  const [result_color, setColor] = useState("");
+  
   const changeColor = (e) => {
-    if(e.target.innerText === "빨간색 버튼")  color = "red";
-    if(e.target.innerText === "파란색 버튼")  color = "blue";
-    if(e.target.innerText === "핑크색")  color = "";
-    setColor(result.style);
-    // console.log(result.style.color);
+    if(e.target.value !== "") setResult(e.target.value);
+    if(e.target.innerText === "빨간색 버튼") setColor("red");
+    if(e.target.innerText === "파란색 버튼") setColor("blue");
+    if(e.target.value === "핑크색") setColor("");
   }
 
   return (
     <div>
-      <p>{result ?? "123"}</p>
+      <p style={{color : result_color}}>{result}</p>
       <input type="text" onChange={changeColor}/>
       <button onClick={changeColor}>빨간색 버튼</button>
       <button onClick={changeColor}>파란색 버튼</button>
