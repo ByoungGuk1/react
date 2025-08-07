@@ -1,12 +1,12 @@
 // import React from 'react';
 import "./App.css";
-import CheckBoxRefTask from "./docs/ref/basic/CheckBoxRefTask";
+import SideEffectMount from "./docs/lifeCycle/function/SideEffectMount";
 
 function App() {
   return (
     <>
       {/* <React.Fragment> */}
-      <CheckBoxRefTask />
+      <SideEffectMount />
       {/* </React.Fragment> */}
     </>
   );
