@@ -1,12 +1,12 @@
 // import React from 'react';
 import "./App.css";
-import ProductContainer from "./docs/map/expert/Product";
+import CheckBoxRefTask from "./docs/ref/basic/CheckBoxRefTask";
 
 function App() {
   return (
     <>
       {/* <React.Fragment> */}
-      <ProductContainer />
+      <CheckBoxRefTask />
       {/* </React.Fragment> */}
     </>
   );
