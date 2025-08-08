@@ -1,6 +1,6 @@
 // import React from 'react';
 import "./App.css";
-import ProductContainer from "./docs/map/expert/Product";
+import ProductContainer from "./docs/memoization/ProductContainer";
 
 function App() {
   return (
