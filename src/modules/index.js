@@ -6,7 +6,8 @@ import jobs from "./jobs";
 const rootReducer = combineReducers({
   count,
   font,
-  jobs
+  jobs,
+  
 })
 
 export default rootReducer;
