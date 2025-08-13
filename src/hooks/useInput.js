@@ -5,7 +5,6 @@ const useInput = (initialValue) => {
     
   const ChangeFontSize = (e) => setValue(e.target.value);
 
-
   return [value, ChangeFontSize];
 }
 

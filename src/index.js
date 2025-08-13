@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import {legacy_createStore as createStore} from "redux";
 // ㄴ> 별명 만들기 // 깃 단축어 생각해보기
 import {Provider}from "react-redux";
-import {devtoolsEnhancer, devToolsEnhancerLogOnly}from "@redux-devtools/extension";
+import {devToolsEnhancer, devToolsEnhancerLogOnly}from "@redux-devtools/extension";
 import count from './modules/count';
 
 const store = createStore(count, devToolsEnhancer());
