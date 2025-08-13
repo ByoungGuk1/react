@@ -1,13 +1,20 @@
 import { useContext } from 'react';
 import { PostsContext } from '../../../context/PostsContext';
+import { Link } from 'react-router-dom';
 
 const PostContextList = () => {
-  const test = useContext(PostsContext);
-  console.log(test);
+  const {state, actions, error, loading, refetch} = useContext(PostsContext);
+
+  const postList = state.posts && state.posts.map(({id, title},i) => (
+    <li key={i}>
+      <Link to={`/community/read/${id}`}>{title}</Link>
+    </li>
+  ))
+
   return (
-    <div>
-      
-    </div>
+    <ul>
+      {postList}
+    </ul>
   );
 };
 

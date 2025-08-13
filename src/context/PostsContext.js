@@ -16,7 +16,8 @@ const PostsProvider = ({children}) => {
       setIsUpdate : setIsUpdate,
     },
     error : {
-      error : error
+      error : error,
+      setError : setError,
     },
     loading : {
       loading : loading
@@ -39,7 +40,7 @@ const PostsProvider = ({children}) => {
       setLoading(true);
       console.error(error);
     })
-  }, []);
+  }, [isUpdate]);
 
 
 
